@@ -1,6 +1,7 @@
 // pages/index.js
 "use client";
 import { useEffect } from "react";
+import Link from "next/link";
 import ContactSection from "../components/Contact";
 import {
   FaUsers,
@@ -364,36 +365,36 @@ Buying Resources: Users can buy sports facilities, equipment, and other resource
                   <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
                   <ul>
                     <li>
-                      <a
+                      <Link
                         href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="features"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         Features
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="aboutus"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="/"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         Contact
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -401,36 +402,36 @@ Buying Resources: Users can buy sports facilities, equipment, and other resource
                   <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
                   <ul className="flex space-x-4">
                     <li>
-                      <a
+                      <Link
                         href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <FaLinkedin className="text-4xl text-indigo-500" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <FaTwitter className="text-4xl text-indigo-500" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <FaMailBulk className="text-4xl text-indigo-500" />
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <i className="fab fa-linkedin-in"></i>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -449,7 +450,15 @@ Buying Resources: Users can buy sports facilities, equipment, and other resource
 }
 
 // Optimized Feature Component
-function Feature({ title, description, icon }) {
+function Feature({
+  title,
+  description,
+  icon,
+}: {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+}) {
   return (
     <div className="bg-gray-700 p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl">
       <div className="flex items-center mb-4">
@@ -464,7 +473,19 @@ function Feature({ title, description, icon }) {
 }
 
 // Optimized ReasonCard Component
-function ReasonCard({ icon, title, description, gradientFrom, gradientTo }) {
+function ReasonCard({
+  icon,
+  title,
+  description,
+  gradientFrom,
+  gradientTo,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+  gradientFrom: string;
+  gradientTo: string;
+}) {
   return (
     <div className="bg-gray-600 p-6 rounded-lg shadow-lg transition-all duration-300 transform hover:scale-110 hover:shadow-xl ease-in-out">
       <div
@@ -479,7 +500,15 @@ function ReasonCard({ icon, title, description, gradientFrom, gradientTo }) {
 }
 
 // Optimized Step Component
-function Step({ number, title, description }) {
+function Step({
+  number,
+  title,
+  description,
+}: {
+  number: string;
+  title: string;
+  description: string;
+}) {
   return (
     <div className="bg-gray-700  w-64 p-6 rounded-lg shadow-lg text-center transition-all duration-300 transform hover:scale-110 hover:shadow-xl">
       <div className="text-3xl font-bold text-lime-300 mb-2  transition-all duration-300 transform group-hover:scale-110">
