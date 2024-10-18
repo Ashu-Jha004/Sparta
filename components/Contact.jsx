@@ -40,8 +40,8 @@ const ContactSection = () => {
           Get in Touch
         </h2>
         <p className="mt-4 text-lg text-gray-600 text-center">
-          We'd love to hear from you! Fill out the form below and we'll get back
-          to you shortly.
+          We &apos; d love to hear from you! Fill out the form below and
+          we&apos;ll get back to you shortly.
         </p>
 
         {status && (
