@@ -1,6 +1,5 @@
 // pages/index.js
 "use client";
-import { Link } from "react-scroll";
 import { useEffect } from "react";
 import ContactSection from "../components/Contact";
 import {
@@ -23,10 +22,6 @@ import { motion } from "framer-motion";
 import { CgGym } from "react-icons/cg";
 
 export default function Home() {
-  useEffect(() => {
-    // Add any JavaScript for extra animations (if needed)
-  }, []);
-
   return (
     <>
       <main className="bg-gray-900 text-white min-h-screen relative font-inter">
@@ -369,44 +364,36 @@ Buying Resources: Users can buy sports facilities, equipment, and other resource
                   <h3 className="text-lg font-semibold mb-2">Quick Links</h3>
                   <ul>
                     <li>
-                      <Link
-                        to="start"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         Home
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
-                        to="features"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="features"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         Features
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
-                        to="aboutus"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="aboutus"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         About Us
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
-                        to="/"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="/"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         Contact
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -414,44 +401,36 @@ Buying Resources: Users can buy sports facilities, equipment, and other resource
                   <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
                   <ul className="flex space-x-4">
                     <li>
-                      <Link
-                        to="start"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <FaLinkedin className="text-4xl text-indigo-500" />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
-                        to="start"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <FaTwitter className="text-4xl text-indigo-500" />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
-                        to="start"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <FaMailBulk className="text-4xl text-indigo-500" />
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link
-                        to="start"
-                        smooth={true}
-                        duration={500}
+                      <a
+                        href="start"
                         className="text-gray-400 hover:text-indigo-500 transition duration-300"
                       >
                         <i className="fab fa-linkedin-in"></i>
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
