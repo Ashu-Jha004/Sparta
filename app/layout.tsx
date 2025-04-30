@@ -7,44 +7,47 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "AKTU Result One View | Check Your AKTU University Results Online",
-  description: "Get instant access to AKTU results with one click. Check your Dr. A.P.J. Abdul Kalam Technical University results for all semesters, regular & backlog exams. Fast, accurate, and mobile-friendly results portal.",
+  title: "Sparta | Empowering Athletes and Teams Through Sports Innovation",
+  description:
+    "Join Sparta, the ultimate platform for athletes and teams. Connect, collaborate, and compete with the sports community while accessing cutting-edge tools and resources.",
   keywords: [
-    "AKTU results",
-    "AKTU university results",
-    "check aktu result online",
-    "aktu one view result",
-    "aktu result portal",
-    "aktu latest results",
-    "aktu marksheet",
-    "aktu semester results",
-    "aktu student portal",
-    "AKTU exam results"
+    "sports platform",
+    "athlete community",
+    "team collaboration",
+    "sports challenges",
+    "sports innovation",
+    "athlete resources",
+    "sports networking",
+    "sports technology",
+    "team management",
+    "Sparta sports platform",
   ],
   openGraph: {
-    title: "AKTU Result One View | Check Your AKTU University Results Online",
-    description: "Instant access to AKTU results for all semesters. View your marks, SGPA, and academic status in one click. Official results portal for AKTU students.",
-    url: "https://www.akturesultoneview.com",
-    siteName: "AKTU Result One View",
+    title: "Sparta | Empowering Athletes and Teams Through Sports Innovation",
+    description:
+      "Discover Sparta, a platform designed to connect athletes and teams. Collaborate, compete, and grow with access to innovative tools and resources.",
+    url: "https://sparta009.vercel.app", // Replace with your actual website URL
+    siteName: "Sparta",
     images: [
       {
-        url: "https://www.akturesultoneview.com/og-image.jpg", // Replace with your actual OG image URL
+        url: "https://sparta009.vercel.app/og-image.jpg", // Replace with your actual OG image URL
         width: 1200,
         height: 630,
-        alt: "AKTU Result One View Dashboard",
+        alt: "Sparta Platform Dashboard",
       },
     ],
-    locale: "en_IN",
+    locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "AKTU Result One View | Check Results Online",
-    description: "Official AKTU results portal - Check your semester exams, backlog results, and academic status instantly",
-    images: ["https://www.akturesultoneview.com/twitter-image.jpg"], // Replace with your Twitter image URL
+    title: "Sparta | Empowering Athletes and Teams",
+    description:
+      "Join Sparta, the ultimate sports platform for athletes and teams. Collaborate, compete, and access innovative tools to thrive in the sports industry.",
+    images: ["https://sparta009.vercel.app/twitter-image.jpg"], // Replace with your Twitter image URL
   },
   alternates: {
-    canonical: "https://www.akturesultoneview.com",
+    canonical: "https://sparta009.vercel.app", // Replace with your actual website URL
   },
   robots: {
     index: true,
@@ -59,14 +62,14 @@ export const metadata = {
       "max-snippet": -1,
     },
   },
-  themeColor: "#1a237e",
+  themeColor: "#1a237e", // Adjust this to match your brand's primary color
   viewport: {
     width: "device-width",
     initialScale: 1,
     maximumScale: 1,
   },
-  category: "education",
-}
+  category: "sports",
+};
 
 export default function RootLayout({
   children,

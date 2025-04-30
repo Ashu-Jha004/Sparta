@@ -2,6 +2,7 @@
 "use client";
 import { useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import ContactSection from "../components/Contact";
 import {
   FaUsers,
@@ -70,67 +71,100 @@ export default function Home() {
           </motion.div>
         </section>
         {/*About us */}
-        <section id="aboutus" className="bg-gray-100 py-12 font-sans">
-          <div className="container mx-auto px-6">
-            <motion.h1
-              className=" text-5xl md:text-7xl  leading-tight animate__animated animate__fadeInDown font-extrabold text-center text-gray-900 mb-8 tracking-wide"
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-            >
-              What is <span className="text-indigo-600">Sparta ?</span>
-            </motion.h1>
+        <section
+          id="aboutus"
+          className="relative py-12 font-sans overflow-hidden"
+        >
+          <div className="absolute inset-0">
+            {/* Top Left Gradient */}
+            <div className="absolute top-0 left-0 w-1/3 h-1/3 bg-gradient-to-br from-indigo-500 to-transparent opacity-10 rounded-full blur-3xl"></div>
+            {/* Bottom Right Gradient */}
+            <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-gradient-to-tl from-indigo-500 to-transparent opacity-10 rounded-full blur-3xl"></div>
+            {/* Center Texture */}
+            <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+          </div>
+          {/* Decorative Background Elements */}
 
-            <motion.p
-              className="text-xl max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s text-gray-700  text-center mb-6 leading-relaxed"
-              initial={{ opacity: 0, x: -50 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-            >
-              Sparta is a platform that empowers athletes and teams by
-              connecting them through sports challenges, collaboration, and
-              access to resources in the sports community.
-            </motion.p>
+          <div className="relative container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            {/* Left Column: Text Content */}
 
+            <div>
+              <motion.h1
+                className="text-5xl md:text-7xl leading-tight animate__animated animate__fadeInDown font-extrabold text-white mb-8 tracking-wide"
+                initial={{ opacity: 0, y: -50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6 }}
+              >
+                What is <span className="text-indigo-500">Sparta?</span>
+              </motion.h1>
+
+              <motion.p
+                className="text-xl max-w-2xl animate__animated animate__fadeInUp animate__delay-1s text-gray-300 mb-6 leading-relaxed"
+                initial={{ opacity: 0, x: -50 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+              >
+                Sparta is a platform that empowers athletes and teams by
+                connecting them through sports challenges, collaboration, and
+                access to resources in the sports community.
+              </motion.p>
+
+              <motion.div
+                className="grid grid-cols-1 gap-8"
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+              >
+                <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+                  <h3 className="text-2xl font-semibold text-indigo-400 mb-2">
+                    Our Mission
+                  </h3>
+                  <p className="text-gray-300">
+                    To create a vibrant community for athletes, where they can
+                    collaborate, compete, and thrive together, leveraging
+                    technology to enhance their experience and growth.
+                  </p>
+                </div>
+
+                <div className="bg-gray-800 shadow-lg rounded-lg p-6">
+                  <h3 className="text-2xl font-semibold text-indigo-400 mb-2">
+                    Our Vision
+                  </h3>
+                  <p className="text-gray-300">
+                    To revolutionize the sports industry by making sports more
+                    accessible and engaging through innovative tools and
+                    platforms that cater to the needs of athletes and teams.
+                  </p>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="mt-8"
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+              >
+                <p className="text-lg text-gray-300">
+                  Join us in our journey to redefine sports engagement and
+                  excellence!
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Right Column: Image */}
             <motion.div
-              className="grid grid-cols-1 md:grid-cols-2 gap-8"
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
+              className="flex justify-center"
+              initial={{ opacity: 0, x: 50 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              <div className="bg-white shadow-lg rounded-lg p-6">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  Our Mission
-                </h3>
-                <p className="text-gray-600">
-                  To create a vibrant community for athletes, where they can
-                  collaborate, compete, and thrive together, leveraging
-                  technology to enhance their experience and growth.
-                </p>
-              </div>
-
-              <div className="bg-white shadow-lg rounded-lg p-6">
-                <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-                  Our Vision
-                </h3>
-                <p className="text-gray-600">
-                  To revolutionize the sports industry by making sports more
-                  accessible and engaging through innovative tools and platforms
-                  that cater to the needs of athletes and teams.
-                </p>
-              </div>
-            </motion.div>
-
-            <motion.div
-              className="mt-8 text-center"
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.6 }}
-            >
-              <p className="text-lg text-gray-700">
-                Join us in our journey to redefine sports engagement and
-                excellence!
-              </p>
+              <Image
+                width={300}
+                height={300}
+                src="/profile.png" // Replace with the actual path to your image
+                alt="Sparta"
+                className="rounded-lg shadow-lg max-w-full h-auto levitating rotate-right-100"
+              />
             </motion.div>
           </div>
         </section>
