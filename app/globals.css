@@ -51,3 +51,31 @@ body {
 .notification-challenge {
   background-color: #28a745;
 }
+
+.levitating {
+  animation: levitate 3s ease-in-out infinite;
+}
+
+@keyframes levitate {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.rotate-right {
+  transform: rotate(10deg);
+}
+
+/* Grid Pattern */
+.bg-grid-pattern {
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 20px 20px;
+}
