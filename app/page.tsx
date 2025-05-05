@@ -301,58 +301,18 @@ export default function Home() {
               </span>{" "}
               Works ?
             </h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              <ReasonCard
-                icon="Step: 1"
-                description="Users create accounts with basic information (name, location, sports preferences).
-Profile Setup: Users set up their profiles by adding sports interests, skill levels, team affiliations, and personal achievements"
-                title="Register your profile"
-                gradientFrom="lime-300"
-                gradientTo="green-500"
-              />
-              <ReasonCard
-                icon="Step: 2"
-                description="Create a Team: Users can form a team with friends or other athletes in their locality or field of interest.
-Join Teams: Users can search for teams in their area based on rank, sport, or class and request to join them. Team captains can accept or decline these requests."
-                title="Team Formation and Joining"
-                gradientFrom="lime-300"
-                gradientTo="green-500"
-              />
-              <ReasonCard
-                icon="Step: 3"
-                description=" Rank-Based Competitions: Teams participate in tournaments or matches based on their rank and class (local, district, national, etc.).
-Matchmaking System: Sparta matches teams with similar ranks, ensuring fair competition and balanced matchups.
-Class and Rank Progression: Winning matches improves a team’s and individual player’s rank, allowing them to move up in classes (e.g., Class F to Class E, etc.).."
-                title="Challenge other teams"
-                gradientFrom="lime-300"
-                gradientTo="green-500"
-              />
-              <ReasonCard
-                icon="Step: 4"
-                description="Earn Points: Teams earn points for wins, and fan engagement.
-Points Marketplace: Users can buy or rent sports facilities, equipment, and other resources using points.
-Betting System: Users can bet on matches and tournaments, predicting the outcome and earning points based on the outcome.
-Class and Rank Progression: Winning matches improves a team’s and individual player’s rank, allowing them to move up in classes (e.g., Class F to Class E, etc.).."
-                title="Points and Bet System"
-                gradientFrom="lime-300"
-                gradientTo="green-500"
-              />
-              <ReasonCard
-                icon="Step: 5"
-                description="Facility Access: Users can access sports facilities, equipment, and other resources using points.
-Renting Facilities: Users can rent sports facilities, equipment, and other resources using points.
-Buying Resources: Users can buy sports facilities, equipment, and other resources using points."
-                title="Facility Access"
-                gradientFrom="lime-300"
-                gradientTo="green-500"
-              />
-              <ReasonCard
-                icon="Step: 6"
-                description="Promote Your team: Users can promote their sports team, by showcasing their matches and highlights to the world using Sparta."
-                title="Promote Your Bussiness"
-                gradientFrom="lime-300"
-                gradientTo="green-500"
-              />
+            <div className=" gap-8">
+              <iframe
+                width="100%"
+                height="100%"
+                className="aspect-video rounded-lg shadow-lg transition-all duration-300 transform hover:scale-105 hover:shadow-xl"
+                src="https://www.youtube.com/embed/0vFAw4vX6SI?si=191XSmUAwPBFAnxr"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
             </div>
           </div>
         </section>
