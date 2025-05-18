@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+Allow: /
+
+# Optional: Block common sensitive files and folders
+Disallow: /api/
+Disallow: /server/
+Disallow: /config/
+Disallow: /tmp/
+Disallow: /node_modules/
+
+# Crawl-delay for aggressive bots (optional, uncomment if needed)
+# Crawl-delay: 10
+
+# Sitemap location (update to your real domain)
+Sitemap: https://sparta009.vercel.app/sitemap.xml
