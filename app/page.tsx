@@ -1263,7 +1263,7 @@ function PartneredInstitutions() {
   );
 }
 
-// FAQAccordion Component (unchanged, already correct and efficient)
+// FAQ Accordion Component (unchanged, already correct and efficient)
 function FAQAccordion() {
   const faqs = [
     {
