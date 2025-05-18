@@ -886,7 +886,7 @@ export default function Home() {
               <div className="flex flex-col items-center md:items-start gap-2 mt-4">
                 <div className="flex gap-4">
                   <a
-                    href="https://www.linkedin.com/in/ashu-jha" // Replace with real link
+                    href="https://www.linkedin.com/in/ashu-jha-2bb17325b/" // Replace with real link
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-indigo-400 hover:text-indigo-200 transition"
