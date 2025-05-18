@@ -214,7 +214,7 @@ export default function Home() {
             className="relative z-20 max-w-4xl mx-auto"
           >
             <h1 className="text-5xl md:text-7xl text-indigo-300 font-extrabold mb-6 leading-tight animate__animated animate__fadeInDown">
-              The Athlete's Network. The Athlete's Arena.
+              The Athlete&apos;s Network. The Athlete&apos;s Arena.
             </h1>
             <p className="text-xl mb-4 text-indigo-100 font-serif font-medium max-w-2xl mx-auto animate__animated animate__fadeInUp animate__delay-1s">
               Connect with your peers, find your team, and compete to rise to
