@@ -94,6 +94,10 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.png" />
+        <meta
+          name="google-site-verification"
+          content="x0oUna10QYZysrvYQUBJ5HVbFbRTuFvVn6aVjRPUaCI"
+        />
         <meta name="author" content="Ashu Jha" />
         <meta name="publisher" content="Sparta" />
         <meta name="copyright" content="Sparta" />
