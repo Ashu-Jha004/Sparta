@@ -18,6 +18,7 @@ import {
   FaDollarSign,
   FaShare,
   FaRunning,
+  FaPlay,
 } from "react-icons/fa";
 import { PiLadderBold } from "react-icons/pi";
 import { FaRankingStar } from "react-icons/fa6";
@@ -707,6 +708,10 @@ export default function Home() {
                   onMouseOver={(e) => e.currentTarget.play()}
                   onMouseOut={(e) => e.currentTarget.pause()}
                 />
+                {/* Play Button Icon */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <FaPlay className="text-white text-4xl opacity-80 drop-shadow-lg group-hover:scale-110 transition-transform duration-200" />
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-2">
                   <span className="text-white font-semibold text-lg">
                     kabaddi
@@ -725,6 +730,10 @@ export default function Home() {
                   onMouseOver={(e) => e.currentTarget.play()}
                   onMouseOut={(e) => e.currentTarget.pause()}
                 />
+                {/* Play Button Icon */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <FaPlay className="text-white text-4xl opacity-80 drop-shadow-lg group-hover:scale-110 transition-transform duration-200" />
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-2">
                   <span className="text-white font-semibold text-lg">
                     Soccer / Football
@@ -743,6 +752,10 @@ export default function Home() {
                   onMouseOver={(e) => e.currentTarget.play()}
                   onMouseOut={(e) => e.currentTarget.pause()}
                 />
+                {/* Play Button Icon */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <FaPlay className="text-white text-4xl opacity-80 drop-shadow-lg group-hover:scale-110 transition-transform duration-200" />
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-2">
                   <span className="text-white font-semibold text-lg">
                     Football
@@ -760,6 +773,10 @@ export default function Home() {
                   onMouseOver={(e) => e.currentTarget.play()}
                   onMouseOut={(e) => e.currentTarget.pause()}
                 />
+                {/* Play Button Icon */}
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                  <FaPlay className="text-white text-4xl opacity-80 drop-shadow-lg group-hover:scale-110 transition-transform duration-200" />
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-4 py-2">
                   <span className="text-white font-semibold text-lg">
                     Track and Field
