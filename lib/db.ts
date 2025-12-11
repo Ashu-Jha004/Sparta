@@ -1,6 +1,6 @@
 // a hack because of this no new prisma client  delcared on hot reload during development
 
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@prisma/client/edge";
 
 const PrismaClientSingleton = () => {
   return new PrismaClient();

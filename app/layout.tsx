@@ -1,11 +1,23 @@
 import type { Metadata } from "next";
-import { NotificationProvider } from "../context/NotificationContext";
-import NotificationDisplay from "../components/Notification";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 
-const inter = Inter({ subsets: ["latin"] });
+import { Inter, Lexend, JetBrains_Mono } from "next/font/google";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const lexend = Lexend({
+  subsets: ["latin"],
+  variable: "--font-lexend",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  variable: "--font-mono",
+});
 
 export const metadata: Metadata = {
   title: "Sparta | Empowering Athletes and Teams Through Sports Innovation",
@@ -168,11 +180,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className + " scroll-smooth"}>
-        <NotificationProvider>
-          <NotificationDisplay />
-          {children}
-        </NotificationProvider>
+      <body
+        className={`${inter.variable} ${lexend.variable} ${jetbrainsMono.variable} bg-background text-foreground`}
+      >
+        {children}
       </body>
     </html>
   );
