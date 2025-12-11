@@ -81,11 +81,11 @@ export function Footer() {
             </h4>
             <div className="space-y-2">
               <a
-                href="mailto:hello@sparta.in"
+                href="mailto:ashujha009322@gmail.com"
                 className="flex items-center gap-2 text-sm text-sparta-black-600 hover:text-sparta-blue-600"
               >
                 <Mail className="w-4 h-4" />
-                hello@sparta.in
+                ashujha009322@gmail.com
               </a>
               <div className="flex gap-2">
                 <a
