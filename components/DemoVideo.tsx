@@ -71,7 +71,10 @@ export default function DemoVideo({
             "border-gray-200",
           ].join(" ")}
         >
-          <iframe src="https://drive.google.com/file/d/1vUvfM7YrhXQBx-H5ZDNynUys-8Ejgf7Z/view?usp=sharing"></iframe>
+          <iframe
+            title="demo"
+            src="https://drive.google.com/file/d/1vUvfM7YrhXQBx-H5ZDNynUys-8Ejgf7Z/view?usp=sharing"
+          ></iframe>
 
           {/* Click-to-play overlay (only when paused) */}
           {!isPlaying && (
