@@ -71,33 +71,7 @@ export default function DemoVideo({
             "border-gray-200",
           ].join(" ")}
         >
-          <video
-            ref={videoRef}
-            className="h-auto w-full"
-            controls
-            playsInline
-            preload="none"
-            poster={posterSrc}
-            aria-label="Sparta product demo video"
-            onPlay={() => setIsPlaying(true)}
-            onPause={() => setIsPlaying(false)}
-            onEnded={() => setIsPlaying(false)}
-          >
-            {/* Use WebM first when available, then MP4 for broad compatibility. [web:11] */}
-            {webmSrc ? <source src={webmSrc} type="video/webm" /> : null}
-            <source src={mp4Src} type="video/mp4" />
-            {/* Captions improve accessibility; use <track kind="captions"> when possible. [web:28] */}
-            {captionsSrc ? (
-              <track
-                src={captionsSrc}
-                kind="captions"
-                srcLang={captionsLang}
-                label={captionsLabel}
-                default
-              />
-            ) : null}
-            Your browser does not support the video tag.
-          </video>
+          <iframe src="https://drive.google.com/file/d/1vUvfM7YrhXQBx-H5ZDNynUys-8Ejgf7Z/view?usp=sharing"></iframe>
 
           {/* Click-to-play overlay (only when paused) */}
           {!isPlaying && (
