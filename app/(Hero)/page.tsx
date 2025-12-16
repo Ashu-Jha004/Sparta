@@ -8,6 +8,8 @@ import { ProductPreview } from "@/components/landing/ProductPreview";
 import { TractionSection } from "@/components/landing/TractionSection";
 import { WaitlistCTA } from "@/components/landing/WaitlistCTA";
 import { Footer } from "@/components/landing/Footer";
+import DemoVideo from "@/components/DemoVideo";
+import TeamSection from "@/components/investors/TeamSection";
 
 export default function HomePage() {
   return (
@@ -18,8 +20,14 @@ export default function HomePage() {
       <HowItWorks />
       <PersonaCards />
       <ProductPreview />
+      <DemoVideo
+        title="Sparta platform demo"
+        subtitle="Clubs, evaluations, match scheduling, and GameTube—end to end."
+        posterSrc="/sparta.png"
+        mp4Src="/demo.mp4"
+      />
       <TractionSection />
-      <WaitlistCTA />
+      <TeamSection />
       <Footer />
     </MainLayout>
   );

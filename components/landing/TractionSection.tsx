@@ -184,14 +184,21 @@ export function TractionSection() {
         </p>
         <div className="flex flex-wrap items-center justify-center gap-8 opacity-60">
           {/* Placeholder for school logos - replace with real logos later */}
-          {[1, 2, 3, 4, 5].map((i) => (
-            <div
-              key={i}
-              className="h-12 w-24 rounded-lg bg-sparta-black-100 flex items-center justify-center text-xs text-sparta-black-400"
-            >
-              School {i}
-            </div>
-          ))}
+
+          <div className="h-12 w-24 rounded-lg bg-sparta-black-100 flex items-center justify-around text-xs text-sparta-black-400">
+            <Image
+              alt="schools"
+              src={"/school1.png"}
+              width={100}
+              height={100}
+            />
+            <Image
+              alt="schools"
+              src={"/school.2.png"}
+              width={100}
+              height={100}
+            />
+          </div>
         </div>
       </motion.div>
     </section>

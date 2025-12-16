@@ -168,7 +168,7 @@ export function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <Image
-              src="/assets/hero-students.jpg"
+              src="/sparta.png"
               alt="Students playing sports and recording matches"
               fill
               className="object-cover"
